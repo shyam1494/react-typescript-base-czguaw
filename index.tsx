@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
+import Helloo from './Helloo';
 import './style.css';
 
 interface AppProps { }
 interface AppState {
   name: string;
-  Short Name :string;
+  ShortName: string;
   Designation : string;
   Address : string;
   Contact : string ;  
-
-
+}
 
 class App extends Component<AppProps, AppState> {
   constructor() {
@@ -24,12 +24,21 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
-        <Hello name={this.state.name}
-               s 
-                 />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+      <table>
+      <thead>
+      <tr>
+      <th>
+        <Hello name={this.state.name}/>
+      </th>  
+      {/* <th>
+      <Hello name
+      ={this.state.name}/>
+      </th>
+        </tr> */}
+      </tr>
+      </thead>
+       </table>
+       
       </div>
     );
   }

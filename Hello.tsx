@@ -1,5 +1,5 @@
 import React from 'react';
-
+import GoogleAPI from './GoogleAPI';
 export default ({ name }) => 
 <div><h1> {name}!</h1>
 <section>
@@ -9,8 +9,8 @@ export default ({ name }) =>
 <table className="table table-striped">
 <thead>
 <tr>
-  <th style={{ width: '20%' }}>Name</th>
-  <th style={{ width: '20%' }}>Email</th>       
+  <th style={{ width: '0%' }}>Name</th>
+  <th style={{ width: '0%' }}>Email</th>       
 </tr>                    
 </thead>
 <tbody>
@@ -21,5 +21,6 @@ export default ({ name }) =>
 </tbody>            
 </table>
 </section>
+<GoogleAPI/>
 </div>
 
