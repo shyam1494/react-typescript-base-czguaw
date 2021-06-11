@@ -8,7 +8,7 @@ class GoogleAPI extends React.Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      input: ""
+      input: " "
     };
   }
 
@@ -16,7 +16,7 @@ class GoogleAPI extends React.Component {
     // ADD API KEY HERE
     if (
       !document.querySelectorAll(
-        `[src="${"https://maps.googleapis.com/maps/api/js?key=AIzaSyCrbpKmk8dEeA6FhEg9G0sIWjN0Tlgy7YI"}"]`
+        `[src="${"https://maps.googleapis.com/maps/api/js?key="}"]`
       ).length
     ) {
       document.body.appendChild(
@@ -24,7 +24,7 @@ class GoogleAPI extends React.Component {
           type: "text/javascript",
           // ADD API KEY HERE
           src:
-            "https://maps.googleapis.com/maps/api/js?key=AIzaSyCrbpKmk8dEeA6FhEg9G0sIWjN0Tlgy7YI",
+            "https://maps.googleapis.com/maps/api/js?key=",
           onload: () => this.renderMap()
         })
       );
