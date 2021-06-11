@@ -88,7 +88,6 @@ class GoogleAPI extends React.Component {
   render() {
     return (
       <section className="partial-book-slider">
-        <h1>ADD YOUR API KEY TO MAKE IT WORKIN</h1>
         <input
           id="input"
           name="input"
